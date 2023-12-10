@@ -42,3 +42,9 @@ D
 .circleci/config.yml,f/d/fd5da61396a8376845bee5cdf71aaf3c98a888ae
 V
 &udagram/udagram-frontend/bin/deploy.sh,3/3/334f046a3cbff8840e605ea0032489b78c939944
+f
+6udagram/udagram-api/src/controllers/v0/index.router.ts,c/7/c7a5393591d81384a6988c3f1a1399508f401664
+q
+Audagram/udagram-api/src/controllers/v0/feed/routes/feed.router.ts,7/a/7a514084696b9ccd2bdb6b43609aabb694f2ea79
+n
+>udagram/udagram-api/src/controllers/v0/feed/models/FeedItem.ts,7/2/7209c7f889497e57daa4badb6be6368f26d391a4
