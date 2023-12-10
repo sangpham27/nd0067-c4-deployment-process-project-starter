@@ -4,13 +4,14 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "deploy": "npm install -f && npm run build && chmod +x bin/deploy.sh && bin/deploy.sh",
-    "test": "ng test --watch=false",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "start": "node ./www/server.js",
+    "tsc": "npx tsc",
+    "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
+    "prod": "npx tsc && node ./www/server.js",
+    "clean": "rm -rf www/ || true",
+    "deploy": "npm run build && eb list && eb use udagram-api-dev && eb deploy",
+    "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": true,
   "dependencies": {
@@ -34,7 +35,7 @@
     "@angular-devkit/build-angular": "^0.803.24",
     "@angular-devkit/core": "~7.2.3",
     "@angular-devkit/schematics": "~7.2.3",
-    "@angular/cli": "~8.3.25",
+    "@angular/cli": "8.2.2",
     "@angular/compiler": "~8.2.14",
     "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",
@@ -55,7 +56,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~8.0.0",
     "tslint": "~5.12.0",
-    "typescript": "^3.5.3"
+    "typescript": "3.5.3"
   },
   "description": "An Ionic project"
 }
