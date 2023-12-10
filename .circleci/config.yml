@@ -33,7 +33,7 @@ jobs:
       - run:
           name: Front-End Build
           command: |
-            npm run fe:install
+            npm run frontend:install
       # TODO: Build the backend API      
       - run:
           name: API Build
