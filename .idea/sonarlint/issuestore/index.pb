@@ -52,3 +52,17 @@ e
 5udagram/udagram-api/src/controllers/v0/model.index.ts,c/2/c25ff3ff32ddc6abc37c473605111da9dc387ad5
 k
 ;udagram/udagram-api/src/controllers/v0/users/models/User.ts,0/d/0d25767434c79a25b45649fb1a792fa820f9e457
+d
+4udagram/udagram-frontend/src/app/auth/auth.module.ts,0/8/0859914ee67398b26520ccdce109acb00fec85ae
+c
+3udagram/udagram-frontend/src/app/api/api.service.ts,3/8/38e3054e5879a00f9e969cc469502539a22a7e18
+b
+2udagram/udagram-frontend/src/app/api/api.module.ts,0/8/0872ec05e2e2893fe679024b0f4403f7222a95e8
+V
+&udagram/udagram-frontend/tsconfig.json,5/9/5982c9ac7462de6d8f77b5cae863cd175732819b
+D
+docs/dependencies.md,8/e/8ef6e954989f98623a7c599f036efdd555ced6b3
+F
+docs/infrastructure.md,c/e/ce884af71629975ea9ba031f032af638f8d38799
+@
+docs/pipeline.md,7/4/74d900398afd0d6d3f61c489a73c270320217389
